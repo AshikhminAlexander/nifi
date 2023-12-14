@@ -1,0 +1,734 @@
+2023-12-14 07:57:02,969 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 07:57:04,787 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 07:57:04 UTC 2023
+2023-12-14 07:57:05,892 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 07:57:05 UTC 2023
+2023-12-14 07:57:05,895 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 08:15:35,848 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 08:15:37,063 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 08:15:37 UTC 2023
+2023-12-14 08:15:38,449 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 08:15:38 UTC 2023
+2023-12-14 08:15:38,454 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 09:28:52,198 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 09:28:52,422 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 09:28:52 UTC 2023
+2023-12-14 09:28:53,409 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 09:28:53 UTC 2023
+2023-12-14 09:28:53,413 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 10:56:29,792 INFO [NiFi Web Server-174] o.a.n.w.a.c.ValidationExceptionMapper org.apache.nifi.controller.exception.ValidationException: 1 validation error: Cannot automatically terminate 'success' relationship because a Connection already exists with this relationship. Returning Bad Request response.
+2023-12-14 11:29:45,672 WARN [NiFi Web Server-208] o.a.n.w.a.c.IllegalStateExceptionMapper java.lang.IllegalStateException: Queue not empty for 64baa681-018c-1000-c035-6f4d091176d6. Returning Conflict response.
+java.lang.IllegalStateException: Queue not empty for 64baa681-018c-1000-c035-6f4d091176d6
+	at org.apache.nifi.connectable.StandardConnection.verifyCanDelete(StandardConnection.java:498)
+	at org.apache.nifi.controller.StandardProcessorNode.verifyCanDelete(StandardProcessorNode.java:1394)
+	at org.apache.nifi.controller.StandardProcessorNode.verifyCanDelete(StandardProcessorNode.java:1382)
+	at org.apache.nifi.web.dao.impl.StandardProcessorDAO.verifyDelete(StandardProcessorDAO.java:588)
+	at org.apache.nifi.web.dao.impl.StandardProcessorDAO$$FastClassBySpringCGLIB$$779e089b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at org.apache.nifi.web.dao.impl.StandardProcessorDAO$$EnhancerBySpringCGLIB$$24821130.verifyDelete(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.verifyDeleteProcessor(StandardNiFiServiceFacade.java:595)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$FastClassBySpringCGLIB$$358780e0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at org.apache.nifi.web.NiFiServiceFacadeLock.proceedWithReadLock(NiFiServiceFacadeLock.java:161)
+	at org.apache.nifi.web.NiFiServiceFacadeLock.verifyLock(NiFiServiceFacadeLock.java:138)
+	at jdk.internal.reflect.GeneratedMethodAccessor458.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$EnhancerBySpringCGLIB$$56e18c36.verifyDeleteProcessor(<generated>)
+	at org.apache.nifi.web.api.ProcessorResource.lambda$deleteProcessor$22(ProcessorResource.java:984)
+	at org.apache.nifi.web.api.ApplicationResource.withWriteLock(ApplicationResource.java:613)
+	at org.apache.nifi.web.api.ProcessorResource.deleteProcessor(ProcessorResource.java:968)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1459)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:352)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.log.AuthenticationUserFilter.doFilterInternal(AuthenticationUserFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.authenticate(NiFiAuthenticationFilter.java:94)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.doFilter(NiFiAuthenticationFilter.java:56)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.csrf.SkipReplicatedCsrfFilter.doFilterInternal(SkipReplicatedCsrfFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:225)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:190)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.filter.ExceptionFilter.doFilter(ExceptionFilter.java:44)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilterChain(DoSFilter.java:487)
+	at org.apache.nifi.web.server.filter.DataTransferExcludedDoSFilter.doFilterChain(DataTransferExcludedDoSFilter.java:51)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:336)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:301)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.server.log.RequestAuthenticationFilter.doFilterInternal(RequestAuthenticationFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:555)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:410)
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:164)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-12-14 11:29:50,874 WARN [NiFi Web Server-207] o.a.n.w.a.c.IllegalStateExceptionMapper java.lang.IllegalStateException: Queue not empty for 64baa681-018c-1000-c035-6f4d091176d6. Returning Conflict response.
+java.lang.IllegalStateException: Queue not empty for 64baa681-018c-1000-c035-6f4d091176d6
+	at org.apache.nifi.connectable.StandardConnection.verifyCanDelete(StandardConnection.java:498)
+	at org.apache.nifi.controller.StandardProcessorNode.verifyCanDelete(StandardProcessorNode.java:1394)
+	at org.apache.nifi.controller.StandardProcessorNode.verifyCanDelete(StandardProcessorNode.java:1382)
+	at org.apache.nifi.web.dao.impl.StandardProcessorDAO.verifyDelete(StandardProcessorDAO.java:588)
+	at org.apache.nifi.web.dao.impl.StandardProcessorDAO$$FastClassBySpringCGLIB$$779e089b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at org.apache.nifi.web.dao.impl.StandardProcessorDAO$$EnhancerBySpringCGLIB$$24821130.verifyDelete(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.verifyDeleteProcessor(StandardNiFiServiceFacade.java:595)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$FastClassBySpringCGLIB$$358780e0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at org.apache.nifi.web.NiFiServiceFacadeLock.proceedWithReadLock(NiFiServiceFacadeLock.java:161)
+	at org.apache.nifi.web.NiFiServiceFacadeLock.verifyLock(NiFiServiceFacadeLock.java:138)
+	at jdk.internal.reflect.GeneratedMethodAccessor458.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$EnhancerBySpringCGLIB$$56e18c36.verifyDeleteProcessor(<generated>)
+	at org.apache.nifi.web.api.ProcessorResource.lambda$deleteProcessor$22(ProcessorResource.java:984)
+	at org.apache.nifi.web.api.ApplicationResource.withWriteLock(ApplicationResource.java:613)
+	at org.apache.nifi.web.api.ProcessorResource.deleteProcessor(ProcessorResource.java:968)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1459)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:352)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.log.AuthenticationUserFilter.doFilterInternal(AuthenticationUserFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.authenticate(NiFiAuthenticationFilter.java:94)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.doFilter(NiFiAuthenticationFilter.java:56)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.csrf.SkipReplicatedCsrfFilter.doFilterInternal(SkipReplicatedCsrfFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:225)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:190)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.filter.ExceptionFilter.doFilter(ExceptionFilter.java:44)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilterChain(DoSFilter.java:487)
+	at org.apache.nifi.web.server.filter.DataTransferExcludedDoSFilter.doFilterChain(DataTransferExcludedDoSFilter.java:51)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:336)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:301)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.server.log.RequestAuthenticationFilter.doFilterInternal(RequestAuthenticationFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:555)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:410)
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:164)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-12-14 11:29:55,768 WARN [NiFi Web Server-206] o.a.n.w.a.c.IllegalStateExceptionMapper java.lang.IllegalStateException: Queue not empty for 64baa681-018c-1000-c035-6f4d091176d6. Returning Conflict response.
+java.lang.IllegalStateException: Queue not empty for 64baa681-018c-1000-c035-6f4d091176d6
+	at org.apache.nifi.connectable.StandardConnection.verifyCanDelete(StandardConnection.java:498)
+	at org.apache.nifi.web.dao.impl.StandardConnectionDAO.verifyDelete(StandardConnectionDAO.java:612)
+	at org.apache.nifi.web.dao.impl.StandardConnectionDAO$$FastClassBySpringCGLIB$$df292439.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at org.apache.nifi.web.dao.impl.StandardConnectionDAO$$EnhancerBySpringCGLIB$$6b6a96ca.verifyDelete(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.verifyDeleteConnection(StandardNiFiServiceFacade.java:521)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$FastClassBySpringCGLIB$$358780e0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at org.apache.nifi.web.NiFiServiceFacadeLock.proceedWithReadLock(NiFiServiceFacadeLock.java:161)
+	at org.apache.nifi.web.NiFiServiceFacadeLock.verifyLock(NiFiServiceFacadeLock.java:138)
+	at jdk.internal.reflect.GeneratedMethodAccessor458.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$EnhancerBySpringCGLIB$$56e18c36.verifyDeleteConnection(<generated>)
+	at org.apache.nifi.web.api.ConnectionResource.lambda$deleteConnection$5(ConnectionResource.java:364)
+	at org.apache.nifi.web.api.ApplicationResource.withWriteLock(ApplicationResource.java:613)
+	at org.apache.nifi.web.api.ConnectionResource.deleteConnection(ConnectionResource.java:350)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1459)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:352)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.log.AuthenticationUserFilter.doFilterInternal(AuthenticationUserFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.authenticate(NiFiAuthenticationFilter.java:94)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.doFilter(NiFiAuthenticationFilter.java:56)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.csrf.SkipReplicatedCsrfFilter.doFilterInternal(SkipReplicatedCsrfFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:225)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:190)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.filter.ExceptionFilter.doFilter(ExceptionFilter.java:44)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilterChain(DoSFilter.java:487)
+	at org.apache.nifi.web.server.filter.DataTransferExcludedDoSFilter.doFilterChain(DataTransferExcludedDoSFilter.java:51)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:336)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:301)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.server.log.RequestAuthenticationFilter.doFilterInternal(RequestAuthenticationFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:555)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:410)
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:164)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-12-14 11:33:52,520 INFO [NiFi Web Server-212] o.a.n.w.a.c.ValidationExceptionMapper org.apache.nifi.controller.exception.ValidationException: 1 validation error: Cannot automatically terminate 'success' relationship because a Connection already exists with this relationship. Returning Bad Request response.
+2023-12-14 13:47:20,284 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 13:47:21,805 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 13:47:21 UTC 2023
+2023-12-14 13:47:23,108 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 13:47:23 UTC 2023
+2023-12-14 13:47:23,112 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 13:51:23,576 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 13:51:23,743 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 13:51:23 UTC 2023
+2023-12-14 13:51:24,793 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 13:51:24 UTC 2023
+2023-12-14 13:51:24,797 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 14:00:43,017 INFO [NiFi Web Server-90] o.a.n.w.a.c.ValidationExceptionMapper org.apache.nifi.controller.exception.ValidationException: 1 validation error: Penalty duration is not a valid time duration (ie 30 sec, 5 min). Returning Bad Request response.
+2023-12-14 14:05:26,004 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 14:05:26,176 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 14:05:26 UTC 2023
+2023-12-14 14:05:27,143 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 14:05:27 UTC 2023
+2023-12-14 14:05:27,147 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 14:08:27,085 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 14:08:27,291 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 14:08:27 UTC 2023
+2023-12-14 14:08:28,474 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 14:08:28 UTC 2023
+2023-12-14 14:08:28,481 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 14:11:36,706 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 14:11:36,892 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 14:11:36 UTC 2023
+2023-12-14 14:11:37,931 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 14:11:37 UTC 2023
+2023-12-14 14:11:37,935 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 14:36:54,725 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 14:36:56,493 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 14:36:56 UTC 2023
+2023-12-14 14:36:57,678 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 14:36:57 UTC 2023
+2023-12-14 14:36:57,681 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 15:01:39,697 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 15:01:39,881 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 15:01:39 UTC 2023
+2023-12-14 15:01:41,288 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 15:01:41 UTC 2023
+2023-12-14 15:01:41,292 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 15:37:24,507 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 15:37:26,970 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 15:37:26 UTC 2023
+2023-12-14 15:37:28,771 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 15:37:28 UTC 2023
+2023-12-14 15:37:28,774 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 15:55:48,030 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 15:55:49,820 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 15:55:49 UTC 2023
+2023-12-14 15:55:55,683 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 15:55:55 UTC 2023
+2023-12-14 15:55:55,688 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 16:06:18,116 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 16:06:19,585 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 16:06:19 UTC 2023
+2023-12-14 16:06:21,093 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 16:06:21 UTC 2023
+2023-12-14 16:06:21,097 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 16:09:06,903 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 16:09:11,373 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 16:09:11 UTC 2023
+2023-12-14 16:09:13,022 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 16:09:13 UTC 2023
+2023-12-14 16:09:13,026 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 16:10:17,230 INFO [NiFi Web Server-22] o.a.n.w.a.c.IllegalArgumentExceptionMapper java.lang.IllegalArgumentException: The username and password must be specified.}. Returning Bad Request} response.
+java.lang.IllegalArgumentException: The username and password must be specified.
+	at org.apache.nifi.web.api.AccessResource.createAccessToken(AccessResource.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:146)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:189)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:93)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1459)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:352)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.log.AuthenticationUserFilter.doFilterInternal(AuthenticationUserFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.authenticate(NiFiAuthenticationFilter.java:94)
+	at org.apache.nifi.web.security.NiFiAuthenticationFilter.doFilter(NiFiAuthenticationFilter.java:56)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:118)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.apache.nifi.web.security.csrf.SkipReplicatedCsrfFilter.doFilterInternal(SkipReplicatedCsrfFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:361)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:225)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:190)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.filter.ExceptionFilter.doFilter(ExceptionFilter.java:44)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilterChain(DoSFilter.java:487)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:336)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:301)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilterChain(DoSFilter.java:487)
+	at org.apache.nifi.web.server.filter.DataTransferExcludedDoSFilter.doFilterChain(DataTransferExcludedDoSFilter.java:51)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:336)
+	at org.eclipse.jetty.servlets.DoSFilter.doFilter(DoSFilter.java:301)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.apache.nifi.web.server.log.RequestAuthenticationFilter.doFilterInternal(RequestAuthenticationFilter.java:59)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:555)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:410)
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:164)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-12-14 16:11:22,888 INFO [NiFi Web Server-22] o.a.n.w.a.c.ValidationExceptionMapper org.apache.nifi.controller.exception.ValidationException: 1 validation error: Flow file expiration is not a valid time duration (ie 30 sec, 5 min). Returning Bad Request response.
+2023-12-14 16:21:49,179 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 16:21:51,908 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 16:21:51 UTC 2023
+2023-12-14 16:21:52,950 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 16:21:52 UTC 2023
+2023-12-14 16:21:52,953 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 17:18:55,250 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 17:18:56,304 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 17:18:56 UTC 2023
+2023-12-14 17:18:57,414 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 17:18:57 UTC 2023
+2023-12-14 17:18:57,629 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 17:57:06,128 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 17:57:06,824 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 17:57:06 UTC 2023
+2023-12-14 17:57:08,056 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 17:57:08 UTC 2023
+2023-12-14 17:57:08,059 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:04:04,166 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:04:04,453 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:04:04 UTC 2023
+2023-12-14 18:04:05,400 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:04:05 UTC 2023
+2023-12-14 18:04:05,405 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:04:16,977 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:04:46,580 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:04:46,761 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:04:46 UTC 2023
+2023-12-14 18:04:48,095 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:04:48 UTC 2023
+2023-12-14 18:04:48,099 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:04:55,964 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:05:24,488 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:05:24,656 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:05:24 UTC 2023
+2023-12-14 18:05:25,506 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:05:25 UTC 2023
+2023-12-14 18:05:25,510 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:05:32,098 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:06:00,379 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:06:00,567 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:06:00 UTC 2023
+2023-12-14 18:06:01,608 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:06:01 UTC 2023
+2023-12-14 18:06:01,612 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:06:08,757 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:06:35,504 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:06:35,676 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:06:35 UTC 2023
+2023-12-14 18:06:36,683 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:06:36 UTC 2023
+2023-12-14 18:06:36,686 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:06:43,962 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:07:11,714 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:07:11,891 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:07:11 UTC 2023
+2023-12-14 18:07:12,815 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:07:12 UTC 2023
+2023-12-14 18:07:12,819 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:07:22,999 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:07:50,406 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:07:50,575 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:07:50 UTC 2023
+2023-12-14 18:07:51,508 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:07:51 UTC 2023
+2023-12-14 18:07:51,512 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:08:01,741 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:08:28,841 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:08:29,030 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:08:29 UTC 2023
+2023-12-14 18:08:30,530 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:08:30 UTC 2023
+2023-12-14 18:08:30,534 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:08:39,277 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:09:15,976 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:09:16,130 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:09:16 UTC 2023
+2023-12-14 18:09:17,033 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:09:17 UTC 2023
+2023-12-14 18:09:17,036 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:09:27,612 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:09:56,522 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:09:56,688 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:09:56 UTC 2023
+2023-12-14 18:09:57,648 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:09:57 UTC 2023
+2023-12-14 18:09:57,652 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:10:05,515 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:10:34,456 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:10:34,642 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:10:34 UTC 2023
+2023-12-14 18:10:35,577 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:10:35 UTC 2023
+2023-12-14 18:10:35,581 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:10:43,600 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:11:12,628 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:11:12,816 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:11:12 UTC 2023
+2023-12-14 18:11:14,723 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:11:14 UTC 2023
+2023-12-14 18:11:14,731 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:11:26,191 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:12:01,962 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:12:02,141 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:12:02 UTC 2023
+2023-12-14 18:12:03,733 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:12:03 UTC 2023
+2023-12-14 18:12:03,738 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2023-12-14 18:12:15,507 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2023-12-14 18:19:24,460 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2023-12-14 18:19:24,642 INFO [main] o.a.n.a.FileUserGroupProvider Users/Groups file loaded at Thu Dec 14 18:19:24 UTC 2023
+2023-12-14 18:19:25,606 INFO [main] o.a.n.a.FileAccessPolicyProvider Authorizations file loaded at Thu Dec 14 18:19:25 UTC 2023
+2023-12-14 18:19:25,610 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
